@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+:root {
+  --primary-bg-color: rgb(20, 21, 23);
+  --primary-text-color: rgb(193, 194, 197);
+  --sidebar-bg-color: rgb(37, 38, 43);
+  --secondary-bg-color: rgb(26, 27, 30);
+  --secondary-text-color: rgb(255, 255, 255);
+}
+
+.main-container {
+  background-color: var(--primary-bg-color);
+}
+
+header {
+  background-color: var(--sidebar-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: var(--secondary-text-color);
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header .user-grouping:hover {
+  cursor: pointer;
+}
+
+header .user-grouping span {
+  font-size: 1.1rem;
+  margin-right: 1.3rem;
+}
+
+header .user-grouping i {
+  border: 0.13rem solid var(--secondary-text-color);
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+main {
+  display: flex;
+  background-color: var(--sidebar-bg-color);
+}
+
+nav {
+  background-color: var(--secondary-bg-color);
+  color: grey;
+  height: 94vh;
+  width: 30vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 9.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.8rem;
+  gap: 0.5rem;
+}
+
+nav .menu-grouping:hover {
+  background-color: lightsteelblue;
+}
+
+nav .menu-name {
+  font-size: 1.1rem;
+  padding-left: 0.8rem;
+}
+
+section {
+  display: grid;
+  background-color: var(--secondary-bg-color);
+  grid-template-rows: repeat(3, 0.4fr);
+  grid-template-columns: repeat(2, 0.4fr);
+  height: 40vh;
+  width: 80%;
+  outline: 0.13rem solid var(--secondary-text-color);
+  outline-offset: -3rem;
+  padding: 4rem;
+  border-radius: 1%;
+  color: white;
+}

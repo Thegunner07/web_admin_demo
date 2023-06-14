@@ -1,24 +1,45 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "./assets/css/style.css";
+import { setupCounter } from "./assets/js/counter.js";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+document.querySelector("#app").innerHTML = `
+  <div class="main">
+    <header>
+      <h1>Ngage Admin</h1>
+      <div class="user-grouping">
+        <span>Place Holder</span>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <div class="menu-grouping">
+          <div class="menu-img"></div>
+          <i class="fa-solid fa-shoe-prints"></i>
+          <span class="menu-name">Leads Manager</span>
+        </div>
+        <div class="menu-grouping">
+          <div class="menu-img"></div>
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <span class="menu-name">Canned Messages</span>
+        </div>
+      </nav>
+      <section>
+          <div class= "search-engine-container"
+              <div class="search-by-client">Search by Client</div>
+              <div class="search">Search</div>
+              <div class="select the search type">Select The Search Type</div>
+              <div class="Next-Page"></div>
+              <div class="Unlinked Site">Unlinked Sites</div>
+
+
+          </div>
+      </section>
+   
+
+
+
+    </main>
   </div>
-`
+`;
 
-setupCounter(document.querySelector('#counter'))
+// setupCounter(document.querySelector('#counter'))
